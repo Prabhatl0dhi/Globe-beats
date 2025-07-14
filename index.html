@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Globe Beats 🌍🎶</title>
+
+  <!-- Includes -->
+  <script src="https://unpkg.com/globe.gl"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
+  <script type="module" src="./js/globe-init.js"></script>
+
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <div id="globeViz"></div>
+
+  <!-- UI Panel -->
+  <div id="ui">
+    <div id="appTitle">🌍 Globe Beats</div>
+    <div id="nowPlaying"> Click any dot on globe !</div>
+    <div id="controls">
+      <button id="prevBtn">⏮ Previous</button>
+      <button id="playPauseBtn">⏯ Play/Pause</button>
+      <button id="nextBtn">⏭ Next</button>
+      <button id="randomBtn">Random Station</button>
+    </div>
+  </div>
+</body>
+</html>

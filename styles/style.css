@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#globeViz {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* === UI Container === */
+#ui {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 16px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  color: white;
+  max-width: 300px;
+}
+
+/* === Title === */
+#appTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffffff;
+  text-shadow: 0 0 8px #0ff;
+}
+
+/* === Now Playing === */
+#nowPlaying {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #fffa;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* === Controls === */
+#controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#controls button {
+  all: unset;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#controls button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
